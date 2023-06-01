@@ -62,6 +62,13 @@ const registerUser = asyncHandler(async (req, res, next) => {
   }
 });
 
+//login user
+
+const loginUser = asyncHandler((req, res) => {
+  res.send("login user");
+});
+
 module.exports = {
   registerUser,
+  loginUser,
 };
